@@ -11,7 +11,7 @@ const kHomeScreenButtonFirstText = "Principal";
 const kHomeScreenButtonSecondText = "Proximamente";
 const kHomeScreenButtonThirdText = "Lo Top";
 const kHomeScreenTitleText = "NEFLIS UDEO";
-const k404Text = "Esa lica no existe";
+const k404Text = "Aún no existen favoritos Compa....";
 const kFavoriteRemovedText = "Aiios baby";
 const kFavoriteAddedText = "Aqui toy";
 const kDetailsScreenTitleText = "El resumeishon";
@@ -25,7 +25,7 @@ const kAppliedTheme = "Theme applied";
 const kNotFoundErrorText = "Not found";
 const kDrawerAboutDescText =
     "Elaborado por:\n\t\n\tOlga Hinestroza \n\t1804002031\n\t \n\tBryan Tema\n\t1804002032 \n\t\n\t Mynor Vásquez\n\t150402003";
-const kMainGreenColor = Color(0xFF37A45E);
+const kMainGreenColor = Color(0xFFFFFFFF);
 const kMainOrangeColor = Color(0xFFE58901);
 const kMainBlueColor = Color(0xFF292f33);
 const kMainPinkColor = Color(0xFFE84CAF);
