@@ -20,6 +20,7 @@ class MovieModel {
     return data;
   }
 
+//Pagina principal
   Future<List<MovieCard>> getMovies({
     required MoviePageType moviesType,
     required Color themeColor,
@@ -54,6 +55,7 @@ class MovieModel {
     return Future.value(temp);
   }
 
+//Pagina para buscar peliculas
   Future<List<MovieCard>> searchMovies({
     required String movieName,
     required Color themeColor,
@@ -92,6 +94,8 @@ class MovieModel {
     return Future.value(temp);
   }
 
+  //Detalles de pelicula
+
   Future<MovieDetails> getMovieDetails({required String movieID}) async {
     var data = await _getData(
       url:
@@ -119,6 +123,7 @@ class MovieModel {
     );
   }
 
+//Pagina de Favoritos
   Future<List<MovieCard>> getFavorites(
       {required Color themeColor, required int bottomBarIndex}) async {
     List<MovieCard> temp = [];
