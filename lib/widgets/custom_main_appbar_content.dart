@@ -8,6 +8,7 @@ class CustomMainAppBarContent extends StatefulWidget {
   final Color? activeColor;
   final Function? searchOnPressed;
   final Function(int)? buttonFistOnPressed;
+  final Function(int)? buttonFistOnPressed1;
   final Function(int)? buttonSecondOnPressed;
   final Function(int)? buttonThirdOnPressed;
   final bool showSlider;
@@ -23,6 +24,7 @@ class CustomMainAppBarContent extends StatefulWidget {
     this.activeColor,
     required this.searchOnPressed,
     this.buttonFistOnPressed,
+    this.buttonFistOnPressed1,
     this.buttonSecondOnPressed,
     this.buttonThirdOnPressed,
   }) {
@@ -80,6 +82,16 @@ class _CustomMainAppBarContentState extends State<CustomMainAppBarContent> {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    CustomMoviesButton(
+                      text: kHomeScreenButtonFirstText1,
+                      onPressed: () {
+                        setState(() {
+                          widget.buttonFistOnPressed1!(0);
+                        });
+                      },
+                      color: widget._firstColor,
+                    ),
+                    SizedBox(width: 5.w),
                     CustomMoviesButton(
                       text: kHomeScreenButtonFirstText,
                       onPressed: () {

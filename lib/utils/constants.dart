@@ -8,6 +8,7 @@ const kThemoviedbURL = "https://api.themoviedb.org/3/movie";
 const kThemoviedbSearchURL = "https://api.themoviedb.org/3/search/movie";
 const kThemoviedbImageURL = "https://image.tmdb.org/t/p/w300";
 const kHomeScreenButtonFirstText = "Principal";
+const kHomeScreenButtonFirstText1 = "Copañias";
 const kHomeScreenButtonSecondText = "Proximamente";
 const kHomeScreenButtonThirdText = "Lo Top";
 const kHomeScreenTitleText = "NEFLIS UDEO";

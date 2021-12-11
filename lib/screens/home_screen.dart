@@ -109,6 +109,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   title: title,
                   activeButtonIndex: activeInnerPageIndex!,
                   activeColor: themeColor!,
+                  buttonFistOnPressed1: (index) => movieCategorySwitcher(index),
                   buttonFistOnPressed: (index) => movieCategorySwitcher(index),
                   buttonSecondOnPressed: (index) =>
                       movieCategorySwitcher(index),
