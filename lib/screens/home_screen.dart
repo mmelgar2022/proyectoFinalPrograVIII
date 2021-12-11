@@ -17,6 +17,8 @@ import 'package:movies_app_flutter/widgets/shadowless_floating_button.dart';
 import 'package:sizer/sizer.dart';
 import 'package:movies_app_flutter/services/movie.dart';
 
+import 'compani.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
   @override
@@ -61,7 +63,12 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   void movieCompaniSwitcher(int index) {
-    setState(() {});
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SecondRoute()),
+      );
+    });
   }
 
   void movieCategorySwitcher(int index) {
