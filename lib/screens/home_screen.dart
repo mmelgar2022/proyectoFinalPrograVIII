@@ -60,6 +60,10 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
   }
 
+  void movieCompaniSwitcher(int index) {
+    setState(() {});
+  }
+
   void movieCategorySwitcher(int index) {
     setState(() {
       activeInnerPageIndex = index;
@@ -109,7 +113,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   title: title,
                   activeButtonIndex: activeInnerPageIndex!,
                   activeColor: themeColor!,
-                  buttonFistOnPressed1: (index) => movieCategorySwitcher(index),
+                  buttonFistOnPressed1: (index) => movieCompaniSwitcher(index),
                   buttonFistOnPressed: (index) => movieCategorySwitcher(index),
                   buttonSecondOnPressed: (index) =>
                       movieCategorySwitcher(index),
