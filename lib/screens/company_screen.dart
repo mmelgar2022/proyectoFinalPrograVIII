@@ -31,8 +31,9 @@ class Companypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     late Future<CompanyResponse> np;
-    np = MoviesProvider().getCompany(1);
+    np = MoviesProvider().getCompany(24);
     return Scaffold(
+      appBar: AppBar(),
       body: CustomScrollView(
         slivers: [
           SliverList(delegate: SliverChildListDelegate([getInfo(context, np)]))
@@ -82,20 +83,6 @@ class Companypage extends StatelessWidget {
                                 overflow: TextOverflow.fade,
                                 maxLines: 2,
                               ),
-                              Text(
-                                "País de origen: " + snapshot.data!.country,
-                                style: textTheme.headline5,
-                                overflow: TextOverflow.fade,
-                                maxLines: 2,
-                              ),
-                              FadeInImage(
-                                placeholder: AssetImage('assets/no_image.jpeg'),
-                                image: NetworkImage(
-                                    "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" +
-                                        snapshot.data!.logo),
-                                height: 350.0,
-                                width: 300.0,
-                              )
                             ]))));
               },
             );
