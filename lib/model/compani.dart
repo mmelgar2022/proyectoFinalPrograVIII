@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'dart:convert';
+import 'dart:convert' show json;
 
 class CompanyResponse {
   CompanyResponse(
