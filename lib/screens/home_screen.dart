@@ -17,7 +17,8 @@ import 'package:movies_app_flutter/widgets/shadowless_floating_button.dart';
 import 'package:sizer/sizer.dart';
 import 'package:movies_app_flutter/services/movie.dart';
 
-import 'compani.dart';
+import '../model/compani.dart';
+import 'company_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

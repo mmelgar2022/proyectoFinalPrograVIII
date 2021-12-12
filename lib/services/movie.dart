@@ -1,3 +1,4 @@
+import 'package:movies_app_flutter/model/compani.dart';
 import 'package:movies_app_flutter/model/movie_details.dart';
 import 'package:movies_app_flutter/model/movie_preview.dart';
 import 'package:movies_app_flutter/secret/themoviedb_api.dart' as secret;
@@ -6,6 +7,7 @@ import 'package:movies_app_flutter/utils/file_manager.dart';
 import 'package:movies_app_flutter/widgets/movie_card.dart';
 import 'package:flutter/material.dart';
 import 'networking.dart';
+import 'package:http/http.dart' as http;
 
 enum MoviePageType {
   popular,
@@ -156,5 +158,26 @@ class MovieModel {
       }
     }
     return temp;
+  }
+}
+
+class MoviesProvider extends ChangeNotifier {
+  MoviesProvider();
+
+  final String _urlPrincipal = "api.themoviedb.org";
+  final String _apiKey = "8641f903a11a6840bd537663aa6b6bc1";
+  //company
+  Future<CompanyResponse> getCompany(int index) async {
+    //Llamado al API
+    final url =
+        Uri.https(_urlPrincipal, '3/company/$index', {'api_key': _apiKey});
+    final response = await http.get(url);
+    if (response.statusCode == 200) {
+      //ok
+      return CompanyResponse.fromJson(response.body);
+    } else {
+      print(response.statusCode);
+      throw Exception("Fail");
+    }
   }
 }
