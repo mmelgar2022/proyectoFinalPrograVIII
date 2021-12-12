@@ -7,6 +7,7 @@ final GlobalKey<HomeScreenState> kHomeScreenKey = GlobalKey();
 const kThemoviedbURL = "https://api.themoviedb.org/3/movie";
 const kThemoviedbSearchURL = "https://api.themoviedb.org/3/search/movie";
 const kThemoviedbImageURL = "https://image.tmdb.org/t/p/w300";
+const kThemoviecompanyURL = "https://developers.themoviedb.org/3/companies";
 const kHomeScreenButtonFirstText = "Principal";
 const kHomeScreenButtonFirstText1 = "Compañias";
 const kHomeScreenButtonSecondText = "Proximamente";
@@ -41,6 +42,7 @@ const kDrawerTextColor = Color(0xFFFFFFFFF);
 const kSubTitleCardBoxColor = Color(0xFFFFFFFF);
 const kSearchAppBarColor = Color(0xFFE50914);
 const kLightRed = Color(0xFFE50914);
+const kLightblue = Color(0xFF00ff00);
 
 final kTextShadow = [
   Shadow(offset: Offset(0, 0.1.h), blurRadius: 6.0.sp, color: kTextShadowColor),
