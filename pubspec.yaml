@@ -34,8 +34,7 @@ dependencies:
   fluttertoast: ^8.0.8
   http: ^0.13.3
   path_provider: ^2.0.3
-  tmdb_api: ^1.0.0-beta
-  http: ^0.13.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

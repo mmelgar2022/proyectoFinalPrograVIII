@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app_flutter/utils/constants.dart';
-
-void main() {
-  runApp(MaterialApp(
-    title: 'Navigation Basics',
-    home: FirstRoute(),
-  ));
-}
+import 'package:flutter/widgets.dart';
 
 class FirstRoute extends StatelessWidget {
   @override
@@ -19,10 +12,7 @@ class FirstRoute extends StatelessWidget {
         child: RaisedButton(
           child: Text('Open route'),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => SecondRoute()),
-            );
+            // Navega a la segunda ruta cuando se pulsa.
           },
         ),
       ),
@@ -35,13 +25,12 @@ class SecondRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Compañias'),
-        backgroundColor: kAppBarColor,
+        title: Text("Second Route"),
       ),
       body: Center(
         child: RaisedButton(
           onPressed: () {
-            Navigator.pop(context);
+            // Regresa a la primera ruta cuando se pulsa.
           },
           child: Text('Go back!'),
         ),
